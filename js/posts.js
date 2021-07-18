@@ -46,6 +46,14 @@ const interesting_posts = [{
             url: "https://twitter.com/collindonnell/status/1415052296002539525"
         },
         url: "https://twitter.com/steipete/status/1415277085589901312"
+    }, {
+        decorator: "→",
+        text: "Windows in your browser? It's just for businesses right now, but Windows 365 is at the heart of Microsoft's next cloud push which is bound to extend to consumers in the future ",
+        attachment: {
+            type: "url",
+            url: "https://www.theverge.com/2021/7/14/22575064/microsoft-windows-365-cloud-pc-launch-date-price-features"
+        },
+        url: "https://twitter.com/tomwarren/status/1415328853531271177"
     }]
 }, {
     id: "7-12-2021",
@@ -69,4 +77,48 @@ const interesting_posts = [{
         },
         url: "https://twitter.com/_chuckyc/status/1414740922093481986"
     }]
+}, {
+    id: "7-10-2021",
+    date: {
+        display: "10 july 2021"
+    },
+    links: [{
+        decorator: "→",
+        text: "Why is the mouse cursor slightly tilted and not straight? I like the second answer which is illustrated by this picture. ",
+        attachment: {
+            type: "url",
+            url: "https://ux.stackexchange.com/questions/52336/why-is-the-mouse-cursor-slightly-tilted-and-not-straight"
+        },
+        url: "https://twitter.com/vponamariov/status/1413832466813628423"
+    }]
+}, {
+    id: "7-9-2021",
+    date: {
+        display: "9 july 2021"
+    },
+    links: [{
+        decorator: "→",
+        text: "I’m working on a reverse-social media app, where your own ideas and thoughts are presented to you in a social media feed. An app to enrich our information diet with our own private ideas, and allow us to play with them before going public. TestFlight available!",
+        attachment: {
+            type: "url",
+            url: "http://thespellbook.app/"
+        },
+        url: "https://twitter.com/adam_blvck/status/1413546769099726853"
+    }, {
+        decorator: "→",
+        text: "boom towns! a list of the fastest growing towns in the united states",
+        attachment: {
+            type: "url",
+            url: "http://boomtowns.app"
+        },
+        url: "https://twitter.com/swlkr/status/1413590035526422531"
+    }, {
+        decorator: "→",
+        text: "✨ Updated my collection of Marvel Cinematic Universe album art to contain released Phase 4 albums. Also cleaned up the art on a few others.",
+        attachment: {
+            type: "url",
+            url: "http://louie.world/mediaart/marvel.html"
+        },
+        url: "https://twitter.com/Mantia/status/1413656347325865986"
+    }, ]
 }];
