@@ -7,6 +7,8 @@ html, body {
 
     font-size: 18px;
     font-weight: 200;
+
+    background-color: rgb(144,215,250);
 }
 
 body {
@@ -25,6 +27,8 @@ body {
 
     width: 100vw;
     height: 100vh;
+
+    overflow-y: scroll;
 
     padding: 80px 0px;
 
@@ -70,14 +74,15 @@ a:hover {
 
 /** Blog */
 #blog {
-
+    position: absolute;
     text-align: left;
 
     margin-top: 80px;
     min-width: 300px;
     max-width: 500px;
 
-    overflow: hidden
+    overflow-x: hidden;
+    overflow-y: visible;
 }
 
 .blog-date {
@@ -98,6 +103,7 @@ a:hover {
     margin: 14px 10px;
 
     user-select: all;
+    display: block;
 }
 
 .blog-link a {

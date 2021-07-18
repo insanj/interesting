@@ -12,9 +12,6 @@ function renderPost(post) {
     // step 1: extract required data
     const id = post.id;
     const displayDate = post.date.display;
-    const decorator = post.body.decorator;
-    const postBody = post.body.text;
-    const postURL = post.body.url;
 
     // step 2: build elements and assign data
     const postElement = document.createElement("div");
@@ -27,43 +24,50 @@ function renderPost(post) {
     dateElement.textContent = displayDate;
     postElement.appendChild(dateElement);
 
-    const linkElement = document.createElement("div");
-    linkElement.className = "blog-link";
-    postElement.appendChild(linkElement);
+    for (let link of post.links) {
+        
+        const linkDecorator = link.decorator;
+        const linkBody = link.text;
+        const linkURL = link.url;
 
-    const linkFlexElement = document.createElement("div");
-    linkFlexElement.className = "blog-link-flex";
-    linkElement.appendChild(linkFlexElement);
+        const linkElement = document.createElement("div");
+        linkElement.className = "blog-link";
+        postElement.appendChild(linkElement);
 
-    const bulletElement = document.createElement("div");
-    bulletElement.className = "blog-link-bullet";
-    bulletElement.textContent = decorator;
-    linkFlexElement.appendChild(bulletElement);
+        const linkFlexElement = document.createElement("div");
+        linkFlexElement.className = "blog-link-flex";
+        linkElement.appendChild(linkFlexElement);
 
-    const bodyElement = document.createElement("div");
-    bodyElement.className = "blog-link-left";
-    bodyElement.textContent = postBody;
-    linkFlexElement.appendChild(bodyElement);
+        const bulletElement = document.createElement("div");
+        bulletElement.className = "blog-link-bullet";
+        bulletElement.textContent = linkDecorator;
+        linkFlexElement.appendChild(bulletElement);
 
-    const openElement = document.createElement("div");
-    openElement.className = "blog-link-right";
-    linkFlexElement.appendChild(openElement);
+        const bodyElement = document.createElement("div");
+        bodyElement.className = "blog-link-left";
+        bodyElement.textContent = linkBody;
+        linkFlexElement.appendChild(bodyElement);
 
-    const openLinkElement = document.createElement("a");
-    openLinkElement.href = postURL;
-    openLinkElement.target = "_blank";
-    openLinkElement.textContent = "↗ Open";
-    openElement.appendChild(openLinkElement);
+        const openElement = document.createElement("div");
+        openElement.className = "blog-link-right";
+        linkFlexElement.appendChild(openElement);
 
-    // step 3: handle optional keypaths
+        const openLinkElement = document.createElement("a");
+        openLinkElement.href = linkURL;
+        openLinkElement.target = "_blank";
+        openLinkElement.textContent = "↗ Open";
+        openElement.appendChild(openLinkElement);
 
-    if (post.body.attachment) {
-        if (post.body.attachment.type === "url") {
-            const bodyURLElement = document.createElement("a");
-            bodyURLElement.href = post.body.attachment.url;
-            bodyURLElement.textContent = post.body.attachment.url;
-            bodyURLElement.target = "_blank";
-            bodyElement.appendChild(bodyURLElement);
+        // step 3: handle optional keypaths
+
+        if (link.attachment) {
+            if (link.attachment.type === "url") {
+                const bodyURLElement = document.createElement("a");
+                bodyURLElement.href = link.attachment.url;
+                bodyURLElement.textContent = link.attachment.url;
+                bodyURLElement.target = "_blank";
+                bodyElement.appendChild(bodyURLElement);
+            }
         }
     }
 
