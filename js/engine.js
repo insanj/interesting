@@ -17,7 +17,9 @@ function renderPost(post) {
     const postElement = document.createElement("div");
     postElement.className = "blog-post";
     postElement.id = id;
-    postElement.onclick = permalinkClick(id);
+    postElement.onclick = function () {
+        permalinkClick(id);
+    }
     
     const dateElement = document.createElement("div");
     dateElement.className = "blog-date";
@@ -25,7 +27,7 @@ function renderPost(post) {
     postElement.appendChild(dateElement);
 
     for (let link of post.links) {
-        
+
         const linkDecorator = link.decorator;
         const linkBody = link.text;
         const linkURL = link.url;
