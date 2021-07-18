@@ -101,6 +101,7 @@ a:hover {
 }
 
 .blog-link a {
+    margin-left: 2px;
     word-break: break-all;
 }
 

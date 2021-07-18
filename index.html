@@ -3,9 +3,8 @@
 
 <head>
     <title>💾</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-
 
 <body>
 
@@ -19,46 +18,16 @@
             </div>
         </div>
 
-        <div id="blog">
-            <div class="blog-post" id="7-18-2021" onclick="permalinkClick(this.id)">
-                <div class="blog-date">
-                    18 july 2021
-                </div>
 
-                <div class="blog-link">
-                    <div class="blog-link-flex">
-                        <div class="blog-link-bullet">
-                            →
-                        </div>
-                        <div class="blog-link-left">
-                            this is Microsoft's new 3D emoji. 1,800 emoji will be updated in Windows, Office, and other Microsoft products with a new visual style. Full details here: <a href="https://www.theverge.com/2021/7/15/22578352/microsoft-new-3d-emoji-clippy-windows-office" target=_blank>https://www.theverge.com/2021/7/15/22578352/microsoft-new-3d-emoji-clippy-windows-office</a>
-                        </div>
-                        
-                        <div class="blog-link-right">
-                            <a href="https://twitter.com/tomwarren/status/1415675187509432329" target=_blank>
-                            ↗ Open
-                            </a>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-        </div>
     </div>
 
     <div id="footer">
         &copy; 2021 julian weiss & snowcode, llc
     </div>
 
-
-    <script>
-
-        function permalinkClick(date) {
-            window.location.hash = `#${date}`;
-        }
-
-    </script>
+    <script src="js/posts.js"></script>
+    <script src="js/interactions.js"></script>
+    <script src="js/engine.js"></script>
 
 </body>
 
