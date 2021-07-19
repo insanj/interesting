@@ -100,6 +100,22 @@ a:hover {
 
     user-select: all;
     cursor: pointer;
+
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.blog-date-weekday {
+    text-align: right;
+    float: right;
+    
+    font-weight: 500;
+    opacity: 0.8;
+    font-size: 15px;
+    line-height: 15px;
+
+    user-select: none;
 }
 
 .blog-link {
@@ -162,8 +178,6 @@ a:hover {
 .blog-link-right a {
     color: rgba(50, 51, 70, 1);
 }
-
-
 
 /** Footer */
 #footer {

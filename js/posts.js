@@ -2,19 +2,48 @@
 /**
  * Collection of blog posts. Requires the following keypaths:
  * - id
- * - date.display
- * - links ; which each: contain
+ * - date, which contain:
+ *   required keypaths:
+ *      - display
+ *   optional keypaths:
+ *      - timestamp
+ * - links, which contain:
+ *   required keypaths:
  *      - decorator
  *      - text
  *      - url
- *          and optional keypaths:
+ *   optional keypaths:
  *      - attachment
  *          - supported types: url
  */
 const interesting_posts = [{
     id: "7-18-2021",
     date: {
-        display: "18 july 2021"
+        display: "18 july 2021",
+        timestamp: "2021-07-18T12:00:00+00:00"
+    },
+    links: [{
+        decorator: "→",
+        text: "Netflix is planning to add video games to its service in the next year and has hired Facebook’s VR games content head, and former head of mobile games at EA, to run its new gaming division.",
+        attachment: {
+            type: "url",
+            url: "https://www.bloomberg.com/news/articles/2021-07-14/netflix-plans-to-offer-video-games-in-expansion-beyond-films-tv"
+        },
+        url: "https://twitter.com/markgurman/status/1415434620775145477"
+    }, {
+        decorator: "→",
+        text: "Introducing Steam Deck: powerful, portable PC gaming starting at $399. Designed by Valve, powered by Steam. Shipping December 2021. Learn more and reserve yours tomorrow",
+        attachment: {
+            type: "url",
+            url: "https://www.steamdeck.com/"
+        },
+        url: "https://twitter.com/Steam/status/1415718021469925378"
+    }]
+}, {
+    id: "7-15-2021",
+    date: {
+        display: "15 july 2021",
+        timestamp: "2021-07-15T12:00:00+00:00"
     },
     links: [{
         decorator: "→",
@@ -26,17 +55,18 @@ const interesting_posts = [{
         url: "https://twitter.com/tomwarren/status/1415675187509432329"
     }, {
         decorator: "→",
-        text: "Netflix is planning to add video games to its service in the next year and has hired Facebook’s VR games content head, and former head of mobile games at EA, to run its new gaming division.",
+        text: "PS: if you’re curious, I asked*, and these were done by @studiotendril! *important cultural difference between Microsoft and Apple: Microsoft will gladly tell you who they hired to make the cool thing.",
         attachment: {
             type: "url",
-            url: "https://www.bloomberg.com/news/articles/2021-07-14/netflix-plans-to-offer-video-games-in-expansion-beyond-films-tv"
+            url: "https://twitter.com/studiotendril"
         },
-        url: "https://twitter.com/markgurman/status/1415434620775145477"
+        url: "https://twitter.com/cabel/status/1415716203314642947"
     }]
 }, {
     id: "7-14-2021",
     date: {
-        display: "14 july 2021"
+        display: "14 july 2021",
+        timestamp: "2021-07-14T12:00:00+00:00"
     },
     links: [{
         decorator: "→",
@@ -58,7 +88,8 @@ const interesting_posts = [{
 }, {
     id: "7-12-2021",
     date: {
-        display: "12 july 2021"
+        display: "12 july 2021",
+        timestamp: "2021-07-12T12:00:00+00:00"
     },
     links: [{
         decorator: "→",
@@ -80,7 +111,8 @@ const interesting_posts = [{
 }, {
     id: "7-10-2021",
     date: {
-        display: "10 july 2021"
+        display: "10 july 2021",
+        timestamp: "2021-07-10T12:00:00+00:00"
     },
     links: [{
         decorator: "→",
@@ -90,11 +122,20 @@ const interesting_posts = [{
             url: "https://ux.stackexchange.com/questions/52336/why-is-the-mouse-cursor-slightly-tilted-and-not-straight"
         },
         url: "https://twitter.com/vponamariov/status/1413832466813628423"
+    }, {
+        decorator: "→",
+        text: "boom towns! a list of the fastest growing towns in the united states",
+        attachment: {
+            type: "url",
+            url: "http://boomtowns.app"
+        },
+        url: "https://twitter.com/swlkr/status/1413590035526422531"
     }]
 }, {
     id: "7-9-2021",
     date: {
-        display: "9 july 2021"
+        display: "9 july 2021",
+        timestamp: "2021-07-09T12:00:00+00:00"
     },
     links: [{
         decorator: "→",
@@ -104,14 +145,6 @@ const interesting_posts = [{
             url: "http://thespellbook.app/"
         },
         url: "https://twitter.com/adam_blvck/status/1413546769099726853"
-    }, {
-        decorator: "→",
-        text: "boom towns! a list of the fastest growing towns in the united states",
-        attachment: {
-            type: "url",
-            url: "http://boomtowns.app"
-        },
-        url: "https://twitter.com/swlkr/status/1413590035526422531"
     }, {
         decorator: "→",
         text: "✨ Updated my collection of Marvel Cinematic Universe album art to contain released Phase 4 albums. Also cleaned up the art on a few others.",

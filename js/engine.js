@@ -23,7 +23,33 @@ function renderPost(post) {
     
     const dateElement = document.createElement("div");
     dateElement.className = "blog-date";
-    dateElement.textContent = displayDate;
+
+    if (post.date.timestamp) {
+        const parsedDate = new DateX(post.date.timestamp); //new Date(Date.parse(post.date.timestamp));
+        const parsedDateString = parsedDate.format('j F Y').toLowerCase();
+        
+        // parsedDate.toLocaleDateString('default', {
+        //     year: 'numeric', 
+        //     month: 'long', 
+        //     day: 'numeric'
+        // }).toLowerCase();
+
+        dateElement.textContent = parsedDateString;
+
+        const parsedWeekdayString = parsedDate.format('l').toLowerCase();
+        
+        // parsedDate.toLocaleDateString('default', {
+        //     weekday: 'long'
+        // }).toLowerCase();
+
+        const weekdayElement = document.createElement("div");
+        weekdayElement.className = "blog-date-weekday";
+        weekdayElement.textContent = parsedWeekdayString;
+        dateElement.appendChild(weekdayElement);
+    } else {
+        dateElement.textContent = displayDate;
+    }
+
     postElement.appendChild(dateElement);
 
     for (let link of post.links) {
