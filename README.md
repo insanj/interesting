@@ -1,8 +1,8 @@
 # interesting
 
-💾  interesting list of things
+💾  2 things a day from [@insanj](https://github.com/insanj)
 
-![](https://user-images.githubusercontent.com/951011/126082447-5ff5c056-a811-4c92-b7d5-5ed9199aa061.png)
+![](https://user-images.githubusercontent.com/951011/126204824-c0bca8c7-0299-4926-8eb9-41ff1db27bc8.png)
 
 
 ## Attribution
