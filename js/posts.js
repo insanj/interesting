@@ -17,6 +17,29 @@
  *          - supported types: url
  */
 const interesting_posts = [{
+    id: "7-19-2021",
+    date: {
+        display: "19 july 2021",
+        timestamp: "2021-07-19T12:00:00+00:00"
+    },
+    links: [{
+        decorator: "→",
+        text: "",
+        attachment: {
+            type: "url",
+            url: "https://pic.twitter.com/fR4rDPd35f"
+        },
+        url: "https://twitter.com/LilNasX/status/1417143704117157889"
+    }, {
+        decorator: "→",
+        text: "Privacy is a fundamental human right. At Apple, it’s also one of our core values.",
+        attachment: {
+            type: "url",
+            url: "https://twitter.com/cherthedev/status/1415798144726671360"
+        },
+        url: "https://twitter.com/tapbot_paul/status/1415826128443424768"
+    }]
+}, {
     id: "7-18-2021",
     date: {
         display: "18 july 2021",
