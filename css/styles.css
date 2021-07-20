@@ -154,6 +154,8 @@ a:hover {
 
 .blog-link-left {
     flex: 1;
+
+    font-weight: 300;
 }
 
 .blog-link-right {

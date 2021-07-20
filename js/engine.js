@@ -140,4 +140,19 @@ window.addEventListener('load', function() {
     const container = document.getElementById("container");
     container.appendChild(blog);
 
+    /**
+     * Tiny, easily debugged or optimized wrapper to generate a "last edited" hover text on the page title.
+     */
+    const buildLastEditedHoverTitle = function () {
+        const lastEditedYear = "2021", lastEditedMonth = "07", lastEditedDay = "19";
+        const lastEditedHour = "20", lastEditedMinute = "45";
+
+        const lastEditedDateString = `${lastEditedYear}-${lastEditedMonth}-${lastEditedDay}T${lastEditedHour}:${lastEditedMinute}:00-04:00`;
+        const lastEditedDate = new DateX(lastEditedDateString);
+        const lastEditedFormattedString = lastEditedDate.format("h:iA m/d/y").toLowerCase();
+        const titleHoverString = `last updated @ ${lastEditedFormattedString}`;
+        return titleHoverString;
+    }
+
+    document.getElementById("title").setAttribute("title", buildLastEditedHoverTitle());
 });
