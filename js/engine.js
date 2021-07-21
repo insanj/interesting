@@ -144,8 +144,8 @@ window.addEventListener('load', function() {
      * Tiny, easily debugged or optimized wrapper to generate a "last edited" hover text on the page title.
      */
     const buildLastEditedHoverTitle = function () {
-        const lastEditedYear = "2021", lastEditedMonth = "07", lastEditedDay = "19";
-        const lastEditedHour = "20", lastEditedMinute = "45";
+        const lastEditedYear = "2021", lastEditedMonth = "07", lastEditedDay = "21";
+        const lastEditedHour = "15", lastEditedMinute = "15";
 
         const lastEditedDateString = `${lastEditedYear}-${lastEditedMonth}-${lastEditedDay}T${lastEditedHour}:${lastEditedMinute}:00-04:00`;
         const lastEditedDate = new DateX(lastEditedDateString);

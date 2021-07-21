@@ -17,6 +17,65 @@
  *          - supported types: url
  */
 const interesting_posts = [{
+    id: "7-21-2021",
+    date: {
+        display: "21 july 2021",
+        timestamp: "2021-07-21T12:00:00+00:00"
+    },
+    links: [{
+        decorator: "→",
+        text: 
+`Things to love about Clubhouse:  
+
+✅ Wonderful people  
+✅ Fascinating conversations  
+✅ Backchannel 
+❌ > ✅ Easy to join. 
+        
+After 16 never-boring months of building, we’re thrilled to share that Clubhouse is now out of beta, open to everyone, and ready to begin the next chapter!`,
+        attachment: {
+            type: "url",
+            url: "https://twitter.com/Clubhouse/status/1417892500224626690/photo/1"
+        },
+        url: "https://twitter.com/Clubhouse/status/1417892500224626690"
+    }, {
+        decorator: "→",
+        text: "@flargh I'm having trouble getting my head around this. Are you saying that  promulgated some sort of specification and/or set of requirements for a new technology, got people to invest time and resources supporting it, and then just let it die on the vine?",
+        attachment: {
+            type: "url",
+            url: "https://twitter.com/flargh/status/1417892203704299527"
+        },
+        url: "https://twitter.com/siegel/status/1417894287132532741"
+    }]
+}, {
+    id: "7-20-2021",
+    date: {
+        display: "20 july 2021",
+        timestamp: "2021-07-20T12:00:00+00:00"
+    },
+    links: [{
+        decorator: "→",
+        text: 
+`When @joshbuckley joined Product Hunt as CEO, he came in with some bold plans.
+        
+Now we get to talk about them publicly. 😊 
+
+Product Hunt, meet Hyper:`,
+        attachment: {
+            type: "url",
+            url: "https://www.producthunt.com/stories/product-hunt-meet-hyper"
+        },
+        url: "https://twitter.com/rrhoover/status/1417444301462773764"
+    }, {
+        decorator: "→",
+        text: "A little preview of the tropical region you’ll be tasked with bringing back to life  🐠 @Free_Lives #terranil",
+        attachment: {
+            type: "url",
+            url: "https://twitter.com/Terra_Nil/status/1417425975219007488/photo/1"
+        },
+        url: "https://twitter.com/Terra_Nil/status/1417425975219007488"
+    }]
+}, {
     id: "7-19-2021",
     date: {
         display: "19 july 2021",
@@ -55,7 +114,10 @@ const interesting_posts = [{
         url: "https://twitter.com/markgurman/status/1415434620775145477"
     }, {
         decorator: "→",
-        text: "Introducing Steam Deck: powerful, portable PC gaming starting at $399. Designed by Valve, powered by Steam. Shipping December 2021. Learn more and reserve yours tomorrow",
+        text: 
+`Introducing Steam Deck: powerful, portable PC gaming starting at $399. Designed by Valve, powered by Steam. Shipping December 2021.
+
+Learn more and reserve yours tomorrow. #SteamDeck`,
         attachment: {
             type: "url",
             url: "https://www.steamdeck.com/"
@@ -78,7 +140,10 @@ const interesting_posts = [{
         url: "https://twitter.com/tomwarren/status/1415675187509432329"
     }, {
         decorator: "→",
-        text: "PS: if you’re curious, I asked*, and these were done by @studiotendril! *important cultural difference between Microsoft and Apple: Microsoft will gladly tell you who they hired to make the cool thing.",
+        text: 
+`PS: if you’re curious, I asked*, and these were done by @studiotendril! 
+        
+*important cultural difference between Microsoft and Apple: Microsoft will gladly tell you who they hired to make the cool thing.`,
         attachment: {
             type: "url",
             url: "https://twitter.com/studiotendril"
