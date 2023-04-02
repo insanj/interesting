@@ -1,49 +1,129 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>interesting.works from @insanj</title>
+    <link rel="icon" href="https://em-content.zobj.net/source/skype/289/video-game_1f3ae.png" />
+    <style>
+      html, body {
+        margin: 0;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        background: #070918;
+        color: #ebffda;
+      }
 
-<head>
-    <title>// interesting</title>
+      footer {
+        margin: 20px;
+      }
 
-    <link rel="stylesheet" href="css/styles.css">
+      a {
+        color: inherit;
+      }
 
-    <link rel="apple-touch-icon" sizes="76x76" href="img/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-    <link rel="manifest" href="img/site.webmanifest">
-    <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#8bbcd4">
-    <meta name="msapplication-TileColor" content="#8bbcd4">
-    <meta name="theme-color" content="#8bbcd4">
+      h1, h2, h3, h4 {
+        margin: 0;
+      }
 
-</head>
+      p {
+        margin-bottom: 0;
+      }
 
+      article {
+        border-bottom: 1px dashed #ebffda;
+      }
+
+      header {
+        padding: 20px;
+        border-bottom: 1px dotted #ebffda;
+      }
+
+      #content {
+        background-color: rgba(124, 124, 124, 0.209);
+        min-height: 100vh;
+        padding: 20px;
+      }
+
+      article {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .title {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .poster {
+        margin-top: 6px;
+        width: 300px;
+        height: auto;
+        padding: 12px 0px;
+        border-radius: 20px;
+        object-fit: cover;
+        overflow: clip;
+
+      }
+
+      .description {
+        display: flex;
+        gap: 12px;
+        padding: 0px 0px 14px;
+      }
+
+      .text {
+        padding-bottom: 4px;
+      }
+
+    </style>
+  </head>
 <body>
 
-    <div id="container">
-        <div id="header">
-            <div id="title">
-                <a href="https://interesting.works">
-                    <u>💾</u>  // interesting
-                </a>
-            </div>
-            <div id="subtitle">
-                2 things a day from <a href="https://github.com/insanj" target=_blank>@insanj</a>
-            </div>
+  <header>
+    <h1>
+      game microblog
+    </h1>
+    <h3>
+      handmade from &amp; for <a href="https://github.com/insanj">@insanj</a>
+    </h3>
+  </header>
+  
+  <div id="content">
+
+    <article>
+      <div class="title">
+        <h3><a href="https://store.steampowered.com/app/1385380/Across_the_Obelisk/" target="_blank">Across the Obelisk</a></h3>
+        <h3>&bull;</h3>
+        <h4>1 Apr 2023</h4>
+      </div>
+
+      <div class="description">
+        <img class="poster" src="https://cdn.akamai.steamstatic.com/steam/apps/1385380/header.jpg?t=1680196435" />
+
+        <div class="text">
+          <p>
+            I was drawn into this <i>Slay the Spire</i>-like deckbuilding roguelike when I read it supported co-op. From the first moment, two things became clear &mdash; this game does not look good in 4k, and this game feels ripped right out of the <a href="https://www.battleon.com/" target="_blank">AdventureQuest</a> universe.
+          </p>
+  
+          <p>
+            After one battle, I was brought into the "Town," which reminded me of a point-and-click adventure. A shop, an upgrade station, plot points... this is richer, with more to customize and change my experience, than a single floor in the archetypal <i>Slay the Spire</i> or <i>Dicey Dungeons</i>.
+          </p>
+
+          <p>
+            Ultimately, I favor the art and focus of the classics, but should return to this when wishing for a story and online co-op teamwork.
+          </p>
+  
         </div>
 
+      </div>
+    </article>
 
-    </div>
+  </div>
 
-    <div id="footer">
-        <a href="https://github.com/insanj/interesting/" target=_blank>
-            &copy; 2021 julian weiss & snowcode, llc
-        </a>
-    </div>
-
-    <script src="js/posts.js"></script>
-    <script src="js/interactions.js"></script>
-    <script src="js/DateX.min.js"></script>
-    <script src="js/engine.js"></script>
+  <footer>
+    &copy; 2021-2023 Julian "insanj" Weiss. Open source on Github.
+  </footer>
 
 </body>
-
 </html>

@@ -1,20 +1,23 @@
-# interesting
+# interesting.works
 
-💾  2 things a day from [@insanj](https://github.com/insanj)
+## Now...
+
+<img width="40" src="https://em-content.zobj.net/source/skype/289/video-game_1f3ae.png" /> game microblog from and for @insanj
+
+## Previously...
+
+💾 2 things a day from [@insanj](https://github.com/insanj)
 
 ![](https://user-images.githubusercontent.com/951011/126204824-c0bca8c7-0299-4926-8eb9-41ff1db27bc8.png)
 
+Built using [DateX](https://github.com/foo123/DateX)
 
-## Attribution
-
-- [DateX](https://github.com/foo123/DateX)
-
-## License 
+## License
 
 ```
 MIT License
 
-Copyright (c) 2021 Julian Weiss
+Copyright (c) 2021-2023 Julian "insanj" Weiss
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
