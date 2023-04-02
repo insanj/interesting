@@ -1,10 +1,10 @@
 # interesting.works
 
-## Now...
+<img width="20" src="https://em-content.zobj.net/source/skype/289/video-game_1f3ae.png" /> game microblog from and for [@insanj](https://github.com/insanj)
 
-<img width="40" src="https://em-content.zobj.net/source/skype/289/video-game_1f3ae.png" /> game microblog from and for @insanj
+![](screenshot.jpg)
 
-## Previously...
+### Previously...
 
 💾 2 things a day from [@insanj](https://github.com/insanj)
 
